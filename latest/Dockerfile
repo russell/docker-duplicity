@@ -1,4 +1,4 @@
-FROM alpine:3.8
+FROM alpine:3.10
 
 ENV HOME=/home/duplicity
 
@@ -33,5 +33,5 @@ RUN set -x \
 VOLUME ["/home/duplicity/.cache/duplicity", "/home/duplicity/.gnupg"]
 
 USER duplicity
- 
+
 CMD ["duplicity"]
